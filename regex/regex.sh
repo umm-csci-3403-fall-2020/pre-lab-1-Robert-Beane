@@ -1,3 +1,15 @@
 #!/bin/bash
 
+# Robert Beane
+
+# Regex 0:
+
 sed -E 's/\* ([a-zA-Z]+), ([a-zA-Z]+)/1. \1\n2. \2\n/' r0_input.txt > r0_output.txt
+
+# Regex 1:
+
+sed -E 's/\* ([a-zA-Z]+). My favorite sandwich is ([a-z]+)/1. \1\n2. \2\n/' r1_input.txt > r1_output.txt
+
+# Regex 2:
+
+sed -E 's/\* sandwich with (\S+) (for here|to go)/1. \1\n2. \2\n/' r2_input.txt > r2_output.txt
