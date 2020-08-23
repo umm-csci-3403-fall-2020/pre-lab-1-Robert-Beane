@@ -1,5 +1,8 @@
 # Log-processing-pre-lab
 
+#Robert Beane
+#August, 2020
+
 This is the pre-lab for the "Log processing" lab. It gives you some additional readings, along with practice with shell scripting, using Google Charts, and regular expressions.
 
 ## Table of Contents
@@ -9,7 +12,7 @@ This is the pre-lab for the "Log processing" lab. It gives you some additional r
 * [Exercises](#exercises)
 * [To Turn In](#what-to-turn-in)
 
-## Overview
+#OB# Overview
 
 The goal of this pre-lab is to help prepare us for the "Log processing lab". In particular we'll provide a set of potentially useful readings on particular topics that might be useful, and do three small exercises:
 
