@@ -1,7 +1,7 @@
 # Log-processing-pre-lab
 
-#Robert Beane
-#August, 2020
+# Robert Beane
+# August, 2020
 
 This is the pre-lab for the "Log processing" lab. It gives you some additional readings, along with practice with shell scripting, using Google Charts, and regular expressions.
 
