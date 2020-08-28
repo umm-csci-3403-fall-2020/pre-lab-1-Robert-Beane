@@ -1,5 +1,8 @@
 # Log-processing-pre-lab <!-- omit in toc -->
 
+# Robert Beane
+# August, 2020
+
 [![Wrap contents tests](../../workflows/Wrap%20tests/badge.svg)](../../actions?query=workflow%3A"Wrap+tests")
 [![Regex tests](../../workflows/Regex%20tests/badge.svg)](../../actions?query=workflow%3A"Regex+tests")
 [![Shellcheck](../../workflows/shellcheck/badge.svg)](../../actions?query=workflow%3A"shellcheck")
@@ -17,17 +20,17 @@ This is the pre-lab for the "Log processing" lab. It gives you some additional r
 * [Pre-lab readings and resources](#pre-lab-readings-and-resources)
 * [Exercises](#exercises)
   * [Add Bats dependencies](#add-bats-dependencies)
-  * [Write clean code](#write-clean-code)
-  * [Write `wrap_contents.sh`](#write-wrap_contentssh)
-    * [Make a sample pie chart using `wrap_contents.sh`](#make-a-sample-pie-chart-using-wrap_contentssh)
-  * [Create a tag in `git`](#create-a-tag-in-git)
-  * [Practice with regular expressions](#practice-with-regular-expressions)
-    * [Regex examples](#regex-examples)
-    * [Regex Exercises](#regex-exercises)
-      * [Regex 0](#regex-0)
-      * [Regex 1](#regex-1)
-      * [Regex 2](#regex-2)
-* [What to turn in](#what-to-turn-in)
+    * [Write clean code](#write-clean-code)
+      * [Write `wrap_contents.sh`](#write-wrap_contentssh)
+          * [Make a sample pie chart using `wrap_contents.sh`](#make-a-sample-pie-chart-using-wrap_contentssh)
+	    * [Create a tag in `git`](#create-a-tag-in-git)
+	      * [Practice with regular expressions](#practice-with-regular-expressions)
+	          * [Regex examples](#regex-examples)
+		      * [Regex Exercises](#regex-exercises)
+		            * [Regex 0](#regex-0)
+			          * [Regex 1](#regex-1)
+				        * [Regex 2](#regex-2)
+					* [What to turn in](#what-to-turn-in)
 
 ## Overview
 
@@ -198,16 +201,16 @@ at include:
 
 * [RegexOne.com](https://regexone.com) is a very nice, structured tutorial
   that takes you from the basics up through advanced usages
-  in a nicely paced way.
-* [RegexCrossword.com](https://regexcrossword.com) is fun if you like
-  your learning
-  in a more puzzle-oriented form. They provide a set of
-  "crosswords" where the clues are regular expressions, and
-  you have to figure out what letter fits in a box and
-  satisfies the regexes for that cells row and column. The "Tutorial"
-  puzzles introduce all the basic ideas, and then the others
-  reinforce and expand on those. The advanced ones can be quite
-  tricky.
+    in a nicely paced way.
+    * [RegexCrossword.com](https://regexcrossword.com) is fun if you like
+      your learning
+        in a more puzzle-oriented form. They provide a set of
+	  "crosswords" where the clues are regular expressions, and
+	    you have to figure out what letter fits in a box and
+	      satisfies the regexes for that cells row and column. The "Tutorial"
+	        puzzles introduce all the basic ideas, and then the others
+		  reinforce and expand on those. The advanced ones can be quite
+		    tricky.
 
 As well as _learning_ tools like those above, there are also
 some neat tools that allow you to just check that your
@@ -409,8 +412,8 @@ Be sure to complete the following before the start of lab:
 * Accept (individually) the github classroom assignment
 * Do the Exercises (adding and committing as you go)
   * [ ] Complete `wrap_contents.sh`
-  * [ ] Produce `my_chart.html` with the pie chart
-  * [ ] Create a `git` tag after finishing `wrap_contents.sh`
-  * [ ] Implement `regex.sh`
-* Make sure you push your changes up to GitHub.
-* Submit your URL to canvas when you are ready to be graded.
+    * [ ] Produce `my_chart.html` with the pie chart
+      * [ ] Create a `git` tag after finishing `wrap_contents.sh`
+        * [ ] Implement `regex.sh`
+	* Make sure you push your changes up to GitHub.
+	* Submit your URL to canvas when you are ready to be graded.
