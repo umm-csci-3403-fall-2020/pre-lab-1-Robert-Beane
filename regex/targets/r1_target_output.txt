@@ -2,7 +2,11 @@
 2. turkey
 
 1. Nic
+<<<<<<< HEAD
 2. avocado
+=======
+2. avacado
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 
 1. Vincent
 2. ham

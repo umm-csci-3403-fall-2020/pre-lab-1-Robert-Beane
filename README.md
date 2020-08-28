@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Log-processing-pre-lab <!-- omit in toc -->
 
 [![Wrap contents tests](../../workflows/Wrap%20tests/badge.svg)](../../actions?query=workflow%3A"Wrap+tests")
@@ -36,6 +37,29 @@ The goal of this pre-lab is to help prepare us for the "Log processing lab". In 
 * [ ] Write a small "helper" shell script that will be useful when doing the lab itself.
 * [ ] See how we can use that helper script to construct HTML/Javascript files that use the Google Charts tools to generate a nice graph.
 * [ ] Experiment a little with regular expressions.
+=======
+# Log-processing-pre-lab
+
+# Robert Beane
+# August, 2020
+
+This is the pre-lab for the "Log processing" lab. It gives you some additional readings, along with practice with shell scripting, using Google Charts, and regular expressions.
+
+## Table of Contents
+
+* [Overview](#overview)
+* [Readings](#pre-lab-readings-and-resources)
+* [Exercises](#exercises)
+* [To Turn In](#what-to-turn-in)
+
+#OB# Overview
+
+The goal of this pre-lab is to help prepare us for the "Log processing lab". In particular we'll provide a set of potentially useful readings on particular topics that might be useful, and do three small exercises:
+
+- [ ] Write a small "helper" shell script that will be useful when doing the lab itself.
+- [ ] See how we can use that helper script to construct HTML/Javascript files that use the Google Charts tools to generate a nice graph.
+- [ ] Experiment a little with regular expressions.
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 
 The *pre-lab* is an *individual* project, but the lab will be done in pairs. You should, again, clone your classroom repository and do your work in your copy. You should turn in the URL for your repository in whatever way the instructor requests.
 
@@ -58,6 +82,7 @@ There's obviously tons of information on-line about all these tools, so feel fre
 
 ## Exercises
 
+<<<<<<< HEAD
 ### Add Bats dependencies
 
 :warning: **IMPORTANT** :warning: Because of a bug in GitHub's handling
@@ -96,6 +121,10 @@ should do the trick.
 > part of the lab, and the "Wrap tests" badge at the top of this
 > README should (eventually) turn green when those tests pass.
 
+=======
+### Write `wrap_contents.sh`
+
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 In the full lab there are multiple occasions where we have some text that we want to wrap in a header and footer: The username distribution data is wrapped in its header and footer, the hours data is wrapped in its header and footer, the country distribution data is wrapped in its header and footer, and the combination of these texts is then wrapped in the overall header and footer. The script `wrap_contents.sh` is designed to automate this repeated process. It should take three arguments:
 
 1. The name of the file containing the "contents" that need to be wrapped,
@@ -106,7 +135,11 @@ The second argument is a little odd because it's not an actual filename like the
 
 For example, this call:
 
+<<<<<<< HEAD
 ```bash
+=======
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 ./wrap_contents.sh gloop.txt bits target.html
 ```
 
@@ -116,7 +149,11 @@ The actual joining of the files can be easily accomplished with `cat`. This shou
 
 There is a simple set of tests in `wrap_tests.bats` that give you a sense of whether your implementation of `wrap_contents.sh` works.
 
+<<<<<<< HEAD
 #### Make a sample pie chart using `wrap_contents.sh`
+=======
+### Make a sample pie chart using `wrap_contents.sh`
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 
 To give you an idea of what `wrap_contents.sh` will be used for in the lab, there are three files in the the `chart_example` directory in this repository:
 
@@ -126,7 +163,11 @@ To give you an idea of what `wrap_contents.sh` will be used for in the lab, ther
 
 If you wrote your `wrap_contents.sh` script correctly, this call
 
+<<<<<<< HEAD
 ```bash
+=======
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 ../wrap_contents.sh meats.txt bread my_chart.html
 ```
 
@@ -134,6 +175,7 @@ should produce an HTML file called `my_chart.html` that, when loaded in your fav
 
 The file `chart_example/sample_chart.html` is an example of the kind of thing you're looking to create, so you should be able to compare your work to that; `wrap_tests.bats` will do that automatically but you should probably check it yourself as well.
 
+<<<<<<< HEAD
 ---
 
 ### Create a tag in `git`
@@ -183,19 +225,26 @@ repository at that moment in time.
 
 ---
 
+=======
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 ### Practice with regular expressions
 
 _Regular expressions_ (or "regex" for short)
 are an extremely important tool in
 all software development, and they come up a _lot_ in systems
 work and scripting. Like so many things, learning the most
+<<<<<<< HEAD
 commonly used 10% is 90% of the battle; few people
+=======
+commonly used 10% is 90% of the battle; not that many people
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 can use the more esoteric features without looking things up.
 
 There are a _bunch_ of on-line resources to help you learn
 to use regular expressions. A few that you might look
 at include:
 
+<<<<<<< HEAD
 * [RegexOne.com](https://regexone.com) is a very nice, structured tutorial
   that takes you from the basics up through advanced usages
   in a nicely paced way.
@@ -208,6 +257,22 @@ at include:
   puzzles introduce all the basic ideas, and then the others
   reinforce and expand on those. The advanced ones can be quite
   tricky.
+=======
+- https://regexone.com – a very nice, structured tutorial
+  that takes you from the basics up through advanced usages
+  in a nicely paced way.
+- http://play.inginf.units.it – a structured game that
+  also takes you from the basics up through advanced usage,
+  although it gets tricky fairly quickly. You have to
+  "pseudo-register", but
+  you can in fact just make stuff up if you want to.
+- https://regexcrossword.com – fun if you like your learning
+  in a more puzzle-oriented form. They provide a set of
+  "crosswords" where the clues are regular expressions, and
+  you have to figure out what letter fits in a box and
+  satisfies the regexes for that cells row and column. Gets
+  tricky pretty fast.
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 
 As well as _learning_ tools like those above, there are also
 some neat tools that allow you to just check that your
@@ -246,6 +311,7 @@ and `[[:alnum:]]`, which is `[a-zA-Z0-9]`, but nothing that
 is exactly what `\w` since `alnum` doesn't include the
 underscore.
 
+<<<<<<< HEAD
 **Many tools support the `-E` flag**, which gives you _extended_
 regular expressions. This provides most of the goodies you typically
 want, so that's a good thing to try if your tool (.e.g., `grep` or
@@ -256,13 +322,20 @@ Sigh – history is complicated, even in computer science.
 ```english
 ¯\_(ツ)_/¯
 ```
+=======
+Sigh – history is complicated.
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 
 #### Regex examples
 
 To illustrate these differences, imagine we have an input
 file `r0_input.txt` that contains
 
+<<<<<<< HEAD
 ```english
+=======
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 * KK, muffins
 * Nic, donuts
 * Vincent, juice
@@ -271,7 +344,11 @@ file `r0_input.txt` that contains
 and we want to match and print out the name and
 breakfast snack in the form:
 
+<<<<<<< HEAD
 ```english
+=======
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 1. KK
 2. muffins
 
@@ -315,14 +392,21 @@ awk 'match($0, /([[:alpha:]]+), ([[:alpha:]]+)/, groups) {print "1. " groups[1] 
 
 #### Regex Exercises
 
+<<<<<<< HEAD
 > There's a GitHub Action set up for these tests as well, with
 > a corresponding badge up at the top of the README.
 
+=======
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 In the `regex` folder there are three input files:
 
 * `r0_input.txt`
 * `r1_input.txt`
+<<<<<<< HEAD
 * `r2_input.txt`
+=======
+* `r2_intput.txt`
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 
 You should write a script `regex.sh` (in the folder `regex`)
 that uses a tool like
@@ -332,11 +416,19 @@ output should go in a file with the name `r0_output.txt`,
 `r1_output.txt`, and `r2_output.txt`, respectively.
 (And yes, we basically did one for you.)
 
+<<<<<<< HEAD
 ##### Regex 0
 
 **Input:**
 
 ```english
+=======
+#### Regex 0
+
+**Input:**
+
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 * KK, muffins
 * Nic, donuts
 * Vincent, juice
@@ -344,7 +436,11 @@ output should go in a file with the name `r0_output.txt`,
 
 **Output:**
 
+<<<<<<< HEAD
 ```english
+=======
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 1. KK
 2. muffins
 
@@ -355,6 +451,7 @@ output should go in a file with the name `r0_output.txt`,
 2. juice
 ```
 
+<<<<<<< HEAD
 ##### Regex 1
 
 **Input:**
@@ -362,28 +459,53 @@ output should go in a file with the name `r0_output.txt`,
 ```english
 * I am KK. My favorite sandwich is turkey.
 * I am Nic. My favorite sandwich is avocado.
+=======
+#### Regex 1
+
+**Input:**
+
+```
+* I am KK. My favorite sandwich is turkey.
+* I am Nic. My favorite sandwich is avacado.
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 * I am awesome. I love puppies, but I don't like sandwiches.
 * I am Vincent. My favorite sandwich is ham.
 ```
 
 **Output:**
 
+<<<<<<< HEAD
 ```english
+=======
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 1. KK
 2. turkey
 
 1. Nic
+<<<<<<< HEAD
 2. avocado
+=======
+2. avacado
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 
 1. Vincent
 2. ham
 ```
 
+<<<<<<< HEAD
 ##### Regex 2
 
 **Input:**
 
 ```english
+=======
+#### Regex 2
+
+**Input:**
+
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 * sandwich with turkey.bacon.swiss. for here
 * sandwich with ham.cheddar. to go
 * sandwich with tunaSalad. to go
@@ -391,7 +513,11 @@ output should go in a file with the name `r0_output.txt`,
 
 **Output:**
 
+<<<<<<< HEAD
 ```english
+=======
+```
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 1. turkey.bacon.swiss.
 2. for here
 
@@ -407,10 +533,18 @@ output should go in a file with the name `r0_output.txt`,
 Be sure to complete the following before the start of lab:
 
 * Accept (individually) the github classroom assignment
+<<<<<<< HEAD
 * Do the Exercises (adding and committing as you go)
   * [ ] Complete `wrap_contents.sh`
   * [ ] Produce `my_chart.html` with the pie chart
   * [ ] Create a `git` tag after finishing `wrap_contents.sh`
   * [ ] Implement `regex.sh`
 * Make sure you push your changes up to GitHub.
+=======
+* Do the Exercises (adding and commiting as you go)
+   - [ ] Complete `wrap_contents.sh` (Exercise 1)
+   - [ ] Produce `my_chart.html` with the pie chart (Exercise 2)
+   - [ ] Implement `regex.sh` (Exercise 3)
+* Make sure you push your changes up to Gitub.
+>>>>>>> d1b8ea7c452adaf43fb26080ccc6125ac55a21d4
 * Submit your URL to canvas when you are ready to be graded.
